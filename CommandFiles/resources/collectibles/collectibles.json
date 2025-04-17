@@ -1,0 +1,16 @@
+{
+  "gems": {
+    "key": "gems",
+    "name": "Daily Gems",
+    "flavorText": "Gems, what do you even expect?",
+    "icon": "💎",
+    "type": "currency"
+  },
+  "feudTickets": {
+    "name": "Feud Tickets",
+    "icon": "🎫",
+    "flavorText": "Wtf is this.",
+    "key": "feudTickets",
+    "type": "hardWork"
+  }
+}

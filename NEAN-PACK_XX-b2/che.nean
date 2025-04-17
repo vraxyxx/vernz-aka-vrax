@@ -1,0 +1,84 @@
+START:
+    INITIALIZE_REGISTER ax, 0
+    INITIALIZE_REGISTER bx, 0
+    INITIALIZE_REGISTER cx, 0
+    INITIALIZE_FLAG_REGISTER dx, false
+
+    CALL_FUNCTION scanAndAnalyzeForCassidy
+    CALL_FUNCTION displayResults
+
+    JMP END
+
+scanAndAnalyzeForCassidy:
+    LOAD_DIRECTORY_TO_REGISTER di, "/"
+    CALL_FUNCTION retrieveDataFilesFromDirectory
+    MOV totalDataFiles, [di + DATA_FILES_TOTAL_COUNT_OFFSET]
+
+    LOOP_START:
+        LOAD_NEXT_FILE_TO_REGISTER si, [di + DATA_FILES_POINTER_OFFSET]
+        LOAD_FILE_CONTENTS_TO_REGISTER dx, [si + FILE_CONTENTS_OFFSET]
+
+        CHECK_FOR_Cassidy_IN_FILE dx, Cassidy_PATTERN
+        JUMP_IF_Cassidy_FOUND Cassidy_FOUND_LABEL
+
+        CHECK_FOR_AUTH_IN_FILE dx, AUTH_PATTERN
+        JUMP_IF_AUTH_FOUND AUTH_FOUND_LABEL
+
+        JMP END_LOOP
+    Cassidy_FOUND_LABEL:
+        INCREMENT_COUNTER bx
+        JMP CONTINUE_LOOP
+
+    AUTH_FOUND_LABEL:
+        SET_FLAG_REGISTER dx, true
+        CALL_FUNCTION authenticateCassidy dx
+        JMP CONTINUE_LOOP
+
+    CONTINUE_LOOP:
+        INCREMENT_REGISTER cx
+        JMP LOOP_START
+
+    END_LOOP:
+        RETURN
+
+authenticateCassidy:
+    LOAD_AUTH_PATTERN_TO_REGISTER di, AUTH_PATTERN
+    MATCH_PATTERN_IN_FILE dx, [di + AUTH_PATTERN_OFFSET]
+    CMP_MATCH_COUNT dx, 0
+    JUMP_IF_MATCH_COUNT_NOT_ZERO AUTH_SUCCESS_LABEL
+
+    SECURITY_ALERT "Authentication pattern not detected."
+    SECURITY_ALERT "Cassidy configuration may be compromised."
+    RETURN
+
+    AUTH_SUCCESS_LABEL:
+        SECURITY_RESPONSE_NOTIFY "Authentication pattern detected and verified."
+        SECURITY_RESPONSE_NOTIFY "Initiating Cassidy authenticity validation..."
+        RETURN
+
+displayResults:
+    SECURITY_RESPONSE_NOTIFY "Initializing NeanderScanner v2.0..."
+    SECURITY_RESPONSE_NOTIFY "Total data files scanned: " + totalDataFiles
+    SECURITY_RESPONSE_NOTIFY "Cassidy occurrences identified: " + CassidyCounter
+
+    CMP_Cassidy_COUNTER bx, 0
+    JUMP_IF_Cassidy_COUNTER_ZERO Cassidy_COUNTER_ZERO_LABEL
+
+    CMP_AUTH_VERIFICATION_STATUS dx, true
+    JUMP_IF_AUTH_VERIFIED AUTH_VERIFIED_LABEL
+
+    SECURITY_WARNING "Cassidy identified, but authentication failed."
+    JMP END_DISPLAY
+
+    AUTH_VERIFIED_LABEL:
+        SECURITY_RESPONSE_NOTIFY "Cassidy authentication process completed successfully!"
+        JMP END_DISPLAY
+
+    Cassidy_COUNTER_ZERO_LABEL:
+        SECURITY_WARNING "No Cassidy occurrences detected in the neural network."
+
+    END_DISPLAY:
+        RETURN
+
+END:
+    TERMINATE_PROGRAM

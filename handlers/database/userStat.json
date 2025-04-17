@@ -1,0 +1,283 @@
+{
+  "100075058221244": {
+    "money": 75363598,
+    "exp": 250000,
+    "kills": 54,
+    "spares": 7,
+    "name2": "Liane",
+    "name3": "Clover",
+    "name": "Clover"
+  },
+  "61551231060760": {
+    "money": 2472,
+    "exp": 0
+  },
+  "undefined": {
+    "money": 0,
+    "exp": 0
+  },
+  "61556018595762": {
+    "money": 0,
+    "exp": 0
+  },
+  "61554222594723": {
+    "money": 31974,
+    "exp": 214,
+    "kills": 10,
+    "spares": 3
+  },
+  "100054298824923": {
+    "money": 1089,
+    "exp": 2,
+    "kills": 1,
+    "spares": 1,
+    "name": "Rui"
+  },
+  "61550614656180": {
+    "money": 392504,
+    "exp": 3669,
+    "kills": 42,
+    "spares": 2,
+    "name": "Zack"
+  },
+  "100057648637336": {
+    "money": 5600,
+    "exp": 55,
+    "kills": 3,
+    "spares": 0
+  },
+  "61551488702462": {
+    "money": 903,
+    "exp": 9999,
+    "name": "Kurt"
+  },
+  "100069619761889": {
+    "money": 0,
+    "exp": 0
+  },
+  "100089041723426": {
+    "money": 0,
+    "exp": 0
+  },
+  "100091607693557": {
+    "money": 0,
+    "exp": 0
+  },
+  "100093136853732": {
+    "money": 10500,
+    "exp": 5,
+    "kills": 1,
+    "spares": 0
+  },
+  "100088690249020": {
+    "money": 0,
+    "exp": 0
+  },
+  "61550011623347": {
+    "money": 0,
+    "exp": 0
+  },
+  "61553384385812": {
+    "money": 1000,
+    "exp": 0
+  },
+  "100092141171499": {
+    "money": 0,
+    "exp": 0
+  },
+  "100082224563456": {
+    "money": 0,
+    "exp": 0
+  },
+  "100084485416971": {
+    "money": 0,
+    "exp": 0
+  },
+  "100047445827457": {
+    "money": 33,
+    "exp": 0
+  },
+  "61550517180775": {
+    "money": 0,
+    "exp": 0
+  },
+  "100088034373728": {
+    "money": 0,
+    "exp": 0
+  },
+  "100053990581307": {
+    "money": 0,
+    "exp": 0
+  },
+  "61555367727002": {
+    "money": 0,
+    "exp": 0
+  },
+  "61557487780153": {
+    "money": 0,
+    "exp": 0,
+    "name": "Jutsu",
+    "kills": 1,
+    "spares": 0
+  },
+  "100086038742687": {
+    "money": 82,
+    "exp": 0
+  },
+  "100078204590835": {
+    "money": 0,
+    "exp": 0
+  },
+  "web:web.0": {
+    "money": 53,
+    "exp": 0
+  },
+  "web:..ffff.172.31.196.104": {
+    "money": 400,
+    "exp": 0,
+    "name": "Frisk",
+    "kills": 0,
+    "spares": 2
+  },
+  "web:..ffff.172.31.196.43": {
+    "money": 800,
+    "exp": 5,
+    "name": "Clover",
+    "kills": 0,
+    "spares": 0
+  },
+  "web:..ffff.172.31.196.67": {
+    "money": 0,
+    "exp": 0
+  },
+  "100014024973365": {
+    "money": 500,
+    "exp": 5,
+    "name": "Seru",
+    "kills": 1,
+    "spares": 0
+  },
+  "web:MTMxLjIyNi4xMDYuMTQ2": {
+    "money": 0,
+    "exp": 0,
+    "name": "Flier"
+  },
+  "web:MTMxLjIyNi4xMDYuNjY": {
+    "money": 762,
+    "exp": 0,
+    "name": "Lia",
+    "quizWins": 1
+  },
+  "web:MTMxLjIyNi4xMDYuNjg": {
+    "money": 0,
+    "exp": 0
+  },
+  "discord:1234346521881739307": {
+    "money": 0,
+    "exp": 0
+  },
+  "web:MTMxLjIyNi4xMDcuMTE3": {
+    "money": 0,
+    "exp": 0
+  },
+  "wss:main": {
+    "money": 1217,
+    "exp": 0,
+    "name": "Liaa",
+    "quizWins": 1
+  },
+  "wss:admin": {
+    "money": 100200,
+    "exp": 0,
+    "name": "Admin",
+    "virtualFiles": {
+      "mainDir": [
+        {
+          "name": "hello.txt",
+          "content": "hello+ccli write hello.txt hello+ccli write hello.txt hello+ccli write hello.txt hello",
+          "lastModified": 1735977807178
+        },
+        {
+          "name": "hello2.txt",
+          "content": "hello",
+          "lastModified": 1735977794852
+        },
+        {
+          "name": "hello3.txt",
+          "content": "hello",
+          "lastModified": 1735977798866
+        }
+      ]
+    },
+    "lastModified": 1738990851436,
+    "inventory": [
+      {
+        "name": "***DOG*** Canned Food ",
+        "icon": "🥫",
+        "flavorText": "This is a canned food item, it's not very edible but it's a good product.",
+        "sellPrice": 100,
+        "type": "dog_food",
+        "saturation": 1740000,
+        "key": "dogCan",
+        "prob": 0.68,
+        "group": [
+          "generic",
+          "unlucky",
+          "curse"
+        ],
+        "isTrash": true,
+        "isGift": true
+      }
+    ],
+    "lastGiftClaim": 1735977424556,
+    "fishStamp": 1735977461906,
+    "collectibles": [
+      {
+        "metadata": {
+          "key": "feudTickets",
+          "name": "Feud Tickets",
+          "icon": "🎫",
+          "type": "hardWork"
+        },
+        "amount": 0
+      },
+      {
+        "metadata": {
+          "key": "gems",
+          "name": "Daily Gems",
+          "icon": "💎",
+          "type": "currency"
+        },
+        "amount": 1
+      }
+    ],
+    "lastDailyClaim": 1738990851433,
+    "battlePoints": 10,
+    "cassExpress": {
+      "mailList": [
+        {
+          "body": "Congratulations **Admin** for claiming your daily reward!",
+          "timeStamp": 1738990851434,
+          "title": "Daily Reward Claimed",
+          "author": "wss:admin"
+        }
+      ],
+      "bankLogs": []
+    },
+    "cassEXP": {
+      "exp": 5
+    }
+  },
+  "test": {
+    "money": 0,
+    "exp": 0,
+    "lastModified": 1742650543308
+  },
+  "w@9-8-8-8-5:3-8-3-6-0:0:9-0:2-2-": {
+    "money": 0,
+    "exp": 0,
+    "inventory": [],
+    "name": "Lianee",
+    "lastModified": 1742561741572
+  }
+}

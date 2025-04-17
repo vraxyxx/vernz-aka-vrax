@@ -1,0 +1,67 @@
+{
+  "FCA": {
+    "region": "PRN",
+    "path": "./ws3-fca/index",
+    "selfListen": false,
+    "selfListenEvent": false,
+    "listenEvents": true,
+    "listenTyping": false,
+    "updatePresence": false,
+    "forceLogin": true,
+    "autoMarkDelivery": false,
+    "autoMarkRead": true,
+    "autoReconnect": true,
+    "online": true,
+    "emitReady": false,
+    "userAgent": "utils.defaultUserAgent",
+    "randomUserAgent": false,
+    "bypassRegion": "PNB"
+  },
+  "railwayTips": "Use USA Oregon as region for railway, and render. ",
+  "knownURL": "https://cassidyredux.onrender.com",
+  "defaultLang": "en",
+  "CASS_WATCH": {
+    "enabled": false,
+    "note": "Cassidy Watch is a powerful file backup system that uses meta.version to track changes to your files. It is highly recommended to keep this enabled."
+  },
+  "autoCreateDB": true,
+  "MongoConfig": {
+    "status": true,
+    "uri": "MONGO_URI"
+  },
+  "discordBotToken": "",
+  "discordClientID": "",
+  "pageAccessToken": "",
+  "pageVerifyToken": "",
+  "noFB": true,
+  "credentials": {
+    "email": "",
+    "password": "",
+    "email_asEnvKey": false,
+    "password_asEnvKey": false,
+    "note": "This is for the bot account, not your main account, if email_asEnvKey or password_asEnvKey is true, it will use the .env key provided in email and password fields, this is helpful when hiding the credentials."
+  },
+  "PREFIX": "#",
+  "ADMINBOT": ["wss:admin", "100075058221244"],
+  "EXTRAPREFIX": ["@"],
+  "MODERATORBOT": ["wss:moderator"],
+  "exitOnError": false,
+  "WEB_PASSWORD": "liaSS-web",
+  "maintenanceMode": false,
+  "noLevelUI": true,
+  "noRibbonUI": false,
+  "logPluginChange": false,
+  "warnWhenNoPrefix": false,
+  "strictNoPrefix": false,
+  "requireRgistration": false,
+  "censorInput": false,
+  "censorOutput": true,
+  "mqttRestart": {
+    "enabled": true,
+    "interval": 3600000
+  },
+  "forceWebUID": false,
+  "disableInflation": true,
+  "standardSpectra": false,
+  "autoGoogleTranslate": ""
+}
